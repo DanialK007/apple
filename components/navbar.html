@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../public/style.css">
+
+<nav class="py-4 px-5 md:px-10 lg:px-20 dark:bg-indigo-900 bg-indigo-500 flex gap-10 justify-between items-center text-white">
+    <!-- laptop view -->
+    <a href="#" class="text-2xl font-semibold duration-300 w-28 text-center hover:">BudgetTack</a>
+    <div class="lg:flex gap-5 hidden">
+        <a href="#" class="hover:-tracking-tighter hover:scale-110 duration-300 w-16 text-center active:scale-150">Home</a>
+        <a href="#" class="hover:-tracking-tighter hover:scale-110 duration-300 w-16 text-center active:scale-150">Statics</a>
+        <a href="#" class="hover:-tracking-tighter hover:scale-110 duration-300 w-16 text-center active:scale-150">History</a>
+        <a href="#" class="hover:-tracking-tighter hover:scale-110 duration-300 w-16 text-center active:scale-150">Setting</a>
+    </div>
+
+    <!-- Mobile veiw -->
+    <button id="menuBtn" class="lg:hidden z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+    <div id="menu" class="fixed z-40 top-0 right-0 w-full h-full bg-indigo-500 dark:bg-indigo-800 flex lg:hidden items-center justify-center translate-x-full duration-700 ease-out">
+        <div class="flex gap-5 flex-col text-center text-lg">
+            <a href="" class="">Home</a>
+            <a href="" class="">Statics</a>
+            <a href="" class="">History</a>
+            <a href="" class="">Setting</a>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full");
+    }); 
+</script>

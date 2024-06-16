@@ -1,0 +1,14 @@
+Affirmative Sentence XXX
+Negative Sentence XXX
+Imperative Sentence
+Interrogative Sentence XXX
+
+Interrogative Sentence
+1. Yes/No question
+2. Wh question
+
+Does    the lion    bites   a deer  angrily     in the jungle?
+What    does    the lion    bites   angrily     in the jungle?
+
+
+What
